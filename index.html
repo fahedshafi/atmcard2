@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        #img2{
+            position: absolute;
+            left: 10rem;
+            top: 5rem;
+            border: 3px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 90px black;
+        }
+        #img3{
+            position: absolute;
+            left: 20rem;
+            top: 24rem;
+            border: 3px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 90px black;
+        }
+        #crcl1{
+            position: absolute;
+            left: 12rem;
+            top: 6.5rem;
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #crcl2{
+            position: absolute;
+            left: 16rem;
+            top: 7.5rem;
+            height: 20px;
+            width:20px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        #p1{
+            position: absolute;
+            left: 12rem;
+            top: 12rem;
+            font-size: 35px;
+            color: white;
+        }
+        #p2{
+            position: absolute;
+            left: 12rem;
+            top: 17rem;
+            font-size: 25px;
+            color: white;
+        }
+        #p3{
+            position: absolute;
+            left: 33.2rem;
+            top: 17rem;
+            font-size: 25px;
+            color: white;
+        }
+        #p4{
+            position: absolute;
+            left: 42rem;
+            top: 30.7rem;
+            font-size: 25px;
+            color: white;
+        }
+
+        /* sec2 starts from here */
+
+        #p5{
+            position: absolute;
+            left: 58rem;
+            top: 2rem;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #p6{
+            position: absolute;
+            left: 58rem;
+            top: 9rem;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #p7{
+            position: absolute;
+            left: 58rem;
+            top: 16rem;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #p8{
+            position: absolute;
+            left: 70rem;
+            top: 16rem;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #p9{
+            position: absolute;
+            left: 31rem;
+            top: 17rem;
+            font-size: 25px;
+            color: white;
+        }
+        #p10{
+            position: absolute;
+            left: 34rem;
+            top: 17rem;
+            font-size: 25px;
+            color: white;
+        }
+        #input1{
+            position: absolute;
+            left: 58rem;
+            top: 4rem;
+            height: 40px;
+            width: 350px;
+            border-radius: 8px;
+            border: 2px solid hsl(270, 3%, 87%);
+        }
+        #input2{
+            position: absolute;
+            left: 58rem;
+            top: 11rem;
+            height: 40px;
+            width: 350px;
+            border-radius: 8px;
+            border: 2px solid hsl(270, 3%, 87%);
+        }
+        #input3{
+            position: absolute;
+            left: 58rem;
+            top: 18rem;
+            height: 40px;
+            width: 45px;
+            border-radius: 8px;
+            border: 2px solid hsl(270, 3%, 87%);
+        }
+        #input4{
+            position: absolute;
+            left: 63rem;
+            top: 18rem;
+            height: 40px;
+            width: 38px;
+            border-radius: 8px;
+            border: 2px solid hsl(270, 3%, 87%);
+        }
+        #input5{
+            position: absolute;
+            left: 70rem;
+            top: 18rem;
+            height: 40px;
+            width: 155px;
+            border-radius: 8px;
+            border: 2px solid hsl(270, 3%, 87%);
+        }
+        #para1{
+            color: hsl(0, 100%, 66%);
+            position: absolute;
+            left: 58rem;
+            top: 108px;
+            font-weight: bold;
+            visibility: hidden;
+        }
+        #para2{
+            color: hsl(0, 100%, 66%);
+            position: absolute;
+            left: 58rem;
+            top: 219px;
+            font-weight: bold;
+            visibility: hidden;
+        }
+        #para3{
+            color: hsl(0, 100%, 66%);
+            position: absolute;
+            left: 58rem;
+            top: 333px;
+            font-weight: bold;
+            visibility: hidden;
+        }
+        #para4{
+            color: hsl(0, 100%, 66%);
+            position: absolute;
+            left: 70rem;
+            top: 333px;
+            font-weight: bold;
+            visibility: hidden;
+        }
+        #button{
+            position: absolute;
+            left: 58rem;
+            top: 24rem;
+            height: 50px;
+            width: 365px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            background-color: hsl(278, 68%, 11%);
+            border: 1px solid hsl(278, 68%, 11%);
+            /* box-shadow: 0 0 10px black; */
+        }
+        #sec3{
+            position: absolute;
+            left: 58rem;
+            top: 40rem;
+            height: 150px;
+            width: 365px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 0 10px black;
+            visibility: hidden;
+
+        }
+        #gnrt{
+            background-color: hsl(278, 68%, 11%);
+            height: 40px;
+            width: 365px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            animation: blink 1.2s infinite;
+        }
+        #gnrted{
+            color: hsl(278, 68%, 11%);
+            position: absolute;
+            top: 45px;
+            font-size: 80px;
+        }
+        input::placeholder{
+            color: #999999;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        input{
+            padding-left: 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        @keyframes blink {
+            0%{
+                color: hsl(278, 68%, 11%);
+            }
+            100%{
+                color: white;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="sec1">
+        <img id="img1" src="bg-main-desktop.png" >
+        <img id="img2" src="bg-card-front.png" >
+        <img id="img3"src="bg-card-back.png" >
+        <div id="crcl1"></div>
+        <div id="crcl2"></div>
+        <p id="p1">0000 0000 0000 0000</p>
+        <p id="p2">Name</p>
+        <p id="p3">/</p>
+        <p id="p9">00</p>
+        <p id="p10">00</p>
+        <p id="p4">000</p>
+    </div>
+
+    <div id="sec2">
+        <p id="p5">CARDHOLDER NAME</p>
+        <input type="text" id="input1" placeholder="e.g. Fahed Shafi">
+        <p id="para1">can't be blank</p>
+        <p id="p6">CARD NUMBER</p>
+        <input type="text" id="input2" placeholder="e.g. 1234 5678 9123 4567">
+        <p id="para2">can't be blank</p>
+        <p id="err1">wrong format</p>
+        <pre id="p7">EXP.DATE  (MM/YY)</pre>
+        <input type="number" id="input3" placeholder="MM">
+        <input type="number" id="input4" placeholder="YY">
+        <p id="para3">wrong format</p>
+        <p id="p8">CVC</p>
+        <input type="number" id="input5" placeholder="e.g. 123">
+        <p id="para4">wrong format</p>
+        <input type="submit" id="button" onclick="getValue()">
+    </div>
+
+    <div id="sec3">
+        <p id="gnrt">Your Pin is Genrating...</p>
+        <p id="gnrted">0000</p>
+    </div>
+    <script>
+
+        function getValue(){
+
+            let input1 = document.getElementById("input1");
+            let input2= document.getElementById("input2");
+            let input3= document.getElementById("input3");
+            let input4= document.getElementById("input4");
+            let input5= document.getElementById("input5");
+
+            let para1 = document.getElementById("para1");
+            let para2 = document.getElementById("para2");
+            let para3 = document.getElementById("para3");
+            let para4 = document.getElementById("para4");
+
+            let nums = document.getElementById("p1");
+            let name = document.getElementById("p2");
+            let error1 = document.getElementById("err1");
+            let cvc = document.getElementById("p4");
+            let mm = document.getElementById("p9");
+            let yy = document.getElementById("p10");
+
+            let genrate = document.getElementById("gnrt");
+            let genrated = document.getElementById("gnrted");
+
+            let sec3 = document.getElementById("sec3");
+
+
+            let rand = Math.random()
+            let pin = rand * 10000;
+            
+
+            if ( input1.value == "")
+            {
+                
+                name.innerHTML = "Name";
+                input1.style.border = "2px solid hsl(0, 100%, 66%)";
+                para1.style.visibility = "visible";
+
+            }
+            else 
+            {
+
+                name.innerHTML = input1.value;
+                input1.style.border = "2px solid hsl(270, 3%, 87%)";
+                para1.style.visibility = "hidden";
+
+            }
+
+            if ( input2.value.length < "18" || input2.value.length > "19" )
+            {
+
+                nums.innerHTML = "0000 0000 0000 0000";
+                input2.style.border = "2px solid hsl(0, 100%, 66%)";
+                error1.style.visibility = "visible";
+                para2.style.visibility = "hidden";
+
+            }
+            else if (input2.value == "" )
+            {
+
+                para2.style.visibility = "visible";
+
+            }
+            else 
+            {
+
+                nums.innerHTML = input2.value;
+                input2.style.border = "2px solid hsl(270, 3%, 87%)";
+                para2.style.visibility = "hidden";
+                
+            }
+
+            if ( input5.value.length < "3" || input5.value.length > "3")
+            {
+
+                cvc.innerHTML = "000";
+                input5.style.border = "2px solid hsl(0, 100%, 66%)";
+                para4.style.visibility = "visible";
+
+            }
+            else if ( input5.value == "" )
+            {
+
+                para4.style.visibility = "visible";
+
+            }
+            else 
+            {
+
+                cvc.innerHTML = input5.value;
+                input5.style.border = "2px solid hsl(270, 3%, 87%)";
+                para4.style.visibility = "hidden"; 
+
+
+                setTimeout( () => {
+
+                    genrate.innerHTML = "Your OTP is Generated";
+                    genrated.innerHTML = ~~pin;
+
+                },5000);  
+
+                 sec3.style.visibility = "visible";
+            }
+
+            if ( input3.value.length < "2" || input3.value.length > "2" || input4.value.length < "2" || input4.value.length > "2")
+            {
+
+                mm.innerHTML = "00";
+                yy.innerHTML = "00"
+                input3.style.border = "2px solid hsl(0, 100%, 66%)";
+                input4.style.border = "2px solid hsl(0, 100%, 66%)";
+                para3.style.visibility = "visible";
+
+            }
+            else if ( input3.value == "" || input4.value == "" )
+            {
+
+                para3.style.visibility = "visible";
+
+            }
+            else
+            {
+
+                mm.innerHTML = input3.value;
+                yy.innerHTML = input4.value;
+                input3.style.border = "2px solid hsl(270, 3%, 87%)";
+                input4.style.border = "2px solid hsl(270, 3%, 87%)";
+                para3.style.visibility = "hidden"; 
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
